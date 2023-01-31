@@ -506,7 +506,7 @@ body{
 }
 @media (min-width: 1280px){
   .text__1{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 .text__3{
@@ -773,13 +773,16 @@ body{
 }
 /* header main */
 .header__main{
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   z-index: 10;
   width: 100%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (min-width: 768px){
   .header__main{
@@ -787,7 +790,17 @@ body{
     padding-bottom: 1.75rem;
   }
 }
+.header__main.sticky{
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 0 6 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .nav__logo{
+  display: inline-flex;
   text-decoration-line: none;
 }
 /* main area */
@@ -1676,18 +1689,6 @@ body{
     padding-bottom: 4rem;
   }
 }
-@media (min-width: 1024px){
-  .footer__main{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-}
-@media (min-width: 1280px){
-  .footer__main{
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
 .widgets{
   display: flex;
   align-items: flex-end;
@@ -1799,7 +1800,6 @@ body{
 /* tailwind components layer */
 
 /* tailwind utilities layer */
-
 @media (min-width: 420px){
   .xs\:container{
     width: 100%;
@@ -1837,7 +1837,6 @@ body{
     }
   }
 }
-
 @media (min-width: 1024px){
   .lg\:block{
     display: block;

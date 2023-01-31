@@ -225,11 +225,15 @@
 
   /* header main */
   .header__main {
-    @apply absolute top-0 left-0 w-full z-10 py-5 md:py-7;
+    @apply fixed top-0 left-0 w-full z-10 py-5 md:py-7 transition-all duration-300 ease-in-out;
+  }
+
+  .header__main.sticky {
+    @apply bg-[#270006] shadow-xl py-4;
   }
 
   .nav__logo {
-    @apply no-underline;
+    @apply no-underline inline-flex;
   }
 
   /* main area */
@@ -603,7 +607,7 @@
 
   /* footer main */
   .footer__main {
-    @apply font-sfpro mt-auto py-14 md:py-16 lg:py-20 xl:py-24;
+    @apply font-sfpro mt-auto py-14 md:py-16;
   }
 
   .widgets {
