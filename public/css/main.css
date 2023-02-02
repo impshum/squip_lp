@@ -506,7 +506,8 @@ body{
 }
 @media (min-width: 1280px){
   .text__1{
-    font-size: 1.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 .text__3{
@@ -685,7 +686,7 @@ body{
 }
 @media (min-width: 1024px){
   .section__img img{
-    width: 574px;
+    width: 524px;
   }
 }
 .bordered-grad {
@@ -808,27 +809,17 @@ body{
   flex: 1 1 0%;
 }
 /* hero section */
-.hero__section{
-  padding-top: 7rem;
-}
-@media (min-width: 576px){
-  .hero__section{
-    padding-top: 8rem;
-  }
-}
-@media (min-width: 768px){
-  .hero__section{
-    padding-top: 9rem;
-  }
+.hero__section {
+  /* @apply pt-28 sm:pt-32 md:pt-36 lg:pt-40 xl:pt-48 min-h-screen; */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 4rem;
 }
 @media (min-width: 1024px){
   .hero__section{
-    padding-top: 10rem;
-  }
-}
-@media (min-width: 1280px){
-  .hero__section{
-    padding-top: 12rem;
+    padding-top: 5rem;
   }
 }
 .hero__section .bg__holder{
@@ -842,41 +833,21 @@ body{
     margin-bottom: 1.5rem;
   }
 }
-@media (min-width: 1024px){
-  .hero__section .title__1{
-    margin-bottom: 2rem;
-  }
-}
-@media (min-width: 1280px){
-  .hero__section .title__1{
-    margin-bottom: 2.5rem;
-  }
-}
 .hero__section .text__1{
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.5rem;
   max-width: 720px;
   text-align: center;
   line-height: 1.5;
 }
 @media (min-width: 576px){
   .hero__section .text__1{
-    margin-bottom: 2.75rem;
-  }
-}
-@media (min-width: 768px){
-  .hero__section .text__1{
-    margin-bottom: 3rem;
-  }
-}
-@media (min-width: 1024px){
-  .hero__section .text__1{
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
   }
 }
 .hero__section .btn__group{
-  margin-bottom: 2.75rem;
+  margin-bottom: 2rem;
   align-items: center;
 }
 @media (min-width: 576px){
@@ -886,12 +857,12 @@ body{
 }
 @media (min-width: 768px){
   .hero__section .btn__group{
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
   }
 }
 @media (min-width: 1024px){
   .hero__section .btn__group{
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 }
 .hero__section .btn__group img{
