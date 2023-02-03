@@ -1,0 +1,5 @@
+# Redirect users in Australia or New Zealand to /anz.
+# There CANNOT be spaces in the last parameter: Country=x,y,z or Language=xx,yy
+/  /404     302  Country=in,pk,bd
+# Redirect users in israel to /israel
+/ /test
