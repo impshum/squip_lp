@@ -3,3 +3,5 @@
 /  /404     302  Country=in,pk,bd
 # Redirect users in israel to /israel
 /metrics https://app.yourmove.ai/metrics
+/start /finish
+
