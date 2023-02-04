@@ -8,4 +8,4 @@
 /blocked  /blocked.html  200
 
 # Redirect users from US to blocked page
-/*  https://app.yourmove.ai/v2  301  Country=in,pk,bd
+/*  /blocked  301  Country=in,pk,bd
