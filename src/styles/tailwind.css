@@ -580,11 +580,12 @@
   }
 
   .profile__brief {
-    @apply relative rounded-2xl px-6 py-7 flex flex-col justify-between w-80 lg:w-72 mx-auto lg:mr-0 lg:-mt-12;
+    @apply relative rounded-2xl px-6 py-7 flex flex-col justify-between w-120 lg:w-72 mx-auto lg:mr-0 lg:-mt-12;
   }
 
   .profile__brief .text {
-    @apply text-[13px] font-light;
+    @apply text-[12px] font-light;
+    width: 100px;
   }
 
   .profile__brief .brief {
@@ -592,7 +593,7 @@
   }
 
   .profile__brief .backdrop {
-    width: 74px;
+    width: 100px;
     height: 74px;
     border-radius: 50%;
     position: absolute;
