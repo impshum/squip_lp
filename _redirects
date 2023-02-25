@@ -7,5 +7,5 @@
 # serve blocked.html with beautiful url
 /blocked  /blocked.html  200
 
-# Redirect users from US to blocked page
-/*  https://app.yourmove.ai/v2  301  Country=in,pk,bd
+# Redirect users from US to India page
+/*  https://app.yourmove.ai/v2  301  Country=in,pk,bd,br
