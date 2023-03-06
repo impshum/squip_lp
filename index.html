@@ -27,6 +27,8 @@
 
     <!-- cusotm styles -->
     <link rel="stylesheet" href="./public/css/main.css" />
+    <!-- navbar styles -->
+    <link rel="stylesheet" href="./public/css/nav.css" />
   </head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RRWCX5ENF"></script>
@@ -41,23 +43,33 @@
   <body>
     <!-- app starts -->
     <div id="app">
-      <!-- header main starts -->
-      <header id="headerMain" class="header__main">
-        <nav>
-          <div class="xs:container px-4">
+
+      <!-- nav area starts -->
+      <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
             <a href="./index.html" class="nav__logo">
-              <img
-                src="./public/assets/images/logo.png"
-                alt="Youmove"
-                width="136"
-                height="26"
-                class="img__fluid"
-              />
+              <img src="./public/assets/images/logo.png" alt="Youmove" width="136" height="26" class="img__fluid" />
             </a>
           </div>
-        </nav>
-      </header>
-      <!-- header main ends -->
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+          <a href="#">Link</a>
+        </div>
+      </div>
+      <!-- nav area ends -->
 
       <!-- main area starts -->
       <main class="main__area">
@@ -174,7 +186,7 @@
                     Let’s try highlighting some of your hobbies...
                   </p>
                   <p class="text brief">
-                    I'm the guy your mom warned you about (but secretly hopes you date). 
+                    I'm the guy your mom warned you about (but secretly hopes you date).
                     When I'm not hitting the slopes or tinkering around with my tools, you'll find me probably out birdwatching (yes really) or making delicious lemon desserts - guaranteed to steal your heart
                   </p>
                 </div>
@@ -535,7 +547,7 @@
         </section>
         <!-- go meet ends -->
 
-        
+
       </main>
       <!-- main area ends -->
       <!-- footer main starts -->
