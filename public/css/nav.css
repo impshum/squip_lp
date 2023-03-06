@@ -1,3 +1,9 @@
+@media (max-width: 768px){
+  .main__area {
+    margin-top: -170px;
+  }
+}
+
 .nav {
   height: 70px;
   width: 100%;
