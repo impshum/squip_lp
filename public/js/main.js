@@ -109,22 +109,22 @@ YOU.createTypeWriter = function () {
 };
 
 // sticky header
-YOU.stickyHeader = function () {
-  const header = document.getElementById("headerMain");
-  const scrollPosition = window.scrollY;
-
-  if (scrollPosition > 0) {
-    header.classList.add("sticky");
-    return;
-  }
-  header.classList.remove("sticky");
-};
+//YOU.stickyHeader = function () {
+//  const header = document.getElementById("headerMain");
+//  const scrollPosition = window.scrollY;
+//
+//  if (scrollPosition > 0) {
+//    header.classList.add("sticky");
+//    return;
+//  }
+//  header.classList.remove("sticky");
+//};
 
 // document on load
 document.addEventListener("DOMContentLoaded", () => {
   YOU.manageCarousels();
   YOU.createTypeWriter();
-  YOU.stickyHeader();
+  //YOU.stickyHeader();
 });
 
 // document on scroll
