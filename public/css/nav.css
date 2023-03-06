@@ -1,0 +1,113 @@
+@media (max-width: 1024px){
+  .main__area {
+    margin-top: -170px;
+  }
+}
+
+.nav {
+  height: 70px;
+  width: 100%;
+  background-color: #410b13;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+.nav>.nav-header {
+  display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 5px;
+  color: #fff;
+  padding: 22px 10px 10px 20px;
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>.nav-links {
+  display: inline;
+  float: right;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 24px 18px 22px 18px;
+  text-decoration: none;
+  color: #efefef;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.nav>.nav-links>a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    padding: 25px 30px 25px 25px;
+    cursor: pointer;
+  }
+
+  .nav>.nav-btn>label:hover, .nav #nav-check:checked~.nav-btn>label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 8px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #222;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 70px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
+    display: block;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: auto;
+    overflow-y: auto;
+  }
+}
